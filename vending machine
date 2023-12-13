@@ -1,3 +1,4 @@
+#hot drinks menu
 hot_drinks = [
     {'item_code':'H1',
     'item_name':'Cappuccino',
@@ -25,6 +26,7 @@ hot_drinks = [
     'item_stock':10,
     'item_price':10}
     ]
+#teas menu
 teas = [
     {'item_code':'T1',
     'item_name':'Chai',
@@ -66,6 +68,7 @@ teas = [
     'item_stock':5,
     'item_price':10}
 ]
+#snacks menu
 snacks = [
     {'item_code':'S1',
     'item_name':'Bugles Cheese Chips',
@@ -105,6 +108,7 @@ snacks = [
 #list = ["a","b","c","d","e","f"]
 #for letters in list:
 #    print(letters)
+#for printing out item name, price, stock and code in each category
 def menu():
     print("-----------------------------Please grab the food that you like-----------------------------")
 
@@ -123,6 +127,7 @@ def menu():
         print(f"{item_data['item_code']}\t{item_data['item_name']}\titem stock:{item_data['item_stock']}\titem price:{item_data['item_price']}")
 menu()
 
+#user input
 user_money = int(input("ENTER MONEY: "))
 user_choice = str(input("ENTER ITEM CODE: "))
 
